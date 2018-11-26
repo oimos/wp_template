@@ -19,6 +19,7 @@ services:
     volumes:
       - ./app/php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
       - ./app/wordpress/wp-config.php:/var/www/html/wp-config.php
+      - ./app/wordpress/wp-includes:/var/www/html/wp-includes
       - ../themes/_s:/var/www/html/wp-content/themes/_s
 
   db:
